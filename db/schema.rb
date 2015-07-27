@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20150724081049) do
   end
 
   add_index "line_items", ["cart_id"], name: "index_line_items_on_cart_id", using: :btree
-  add_index "line_items", ["product_id"], name: "index_line_items_on_product_id", using: :btree
 
   create_table "products", force: true do |t|
     t.string   "title"
